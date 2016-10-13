@@ -18,7 +18,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
         android:src="@mipmap/ic_app"
-        app:fab_colorNormal="#DA4336"
+        app:fab_colorNormal="#009688"
         app:fab_colorPressed="#E75043"
         app:fab_colorRipple="#99FFFFFF"
         app:fab_showShadow="true"
@@ -29,7 +29,8 @@
         app:fab_size="normal"
         app:fab_showAnimation="@anim/fab_scale_up"
         app:fab_hideAnimation="@anim/fab_scale_down"
-        app:fab_label="Label">
+        app:fab_label="Label"
+        android:onClick="novoLocal">
     </com.github.clans.fab.FloatingActionButton>
 
     <android.support.v7.widget.Toolbar
