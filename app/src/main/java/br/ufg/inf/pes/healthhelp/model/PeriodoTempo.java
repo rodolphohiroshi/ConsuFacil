@@ -9,14 +9,14 @@ import java.util.Date;
 public class PeriodoTempo implements Serializable {
     private String horaInicio;
     private String horaFim;
-    private String dataInicio;
-    private String dataFim;
+    private Date dataInicio;
+    private Date dataFim;
     private String diasSemana;
 
     public PeriodoTempo() {
     }
 
-    public PeriodoTempo(String horaInicio, String horaFim, String dataInicio, String dataFim, String diasSemana) {
+    public PeriodoTempo(String horaInicio, String horaFim, Date dataInicio, Date dataFim, String diasSemana) {
         this.horaInicio = horaInicio;
         this.horaFim = horaFim;
         this.dataInicio = dataInicio;
@@ -50,19 +50,23 @@ public class PeriodoTempo implements Serializable {
         this.horaFim = horaFim;
     }
 
-    public String getDataInicio() {
+    public Date getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(String dataInicio) {
+    public void setDataInicio(Date dataInicio) {
         this.dataInicio = dataInicio;
     }
 
-    public String getDataFim() {
+    public Date getDataFim() {
         return dataFim;
     }
 
-    public void setDataFim(String dataFim) {
+    public void setDataFim(Date dataFim) {
         this.dataFim = dataFim;
     }
+
+
+
+
 }
