@@ -10,15 +10,15 @@
     android:orientation="vertical"
     tools:context="br.ufg.inf.pes.healthhelp.view.LocaisAtendimentoActivity">
 
-    <com.github.clans.fab.FloatingActionButton
+    <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/fab"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
-        android:src="@mipmap/ic_app"
-        app:fab_colorNormal="#DA4336"
+        android:src="@drawable/ic_plus"
+        app:fab_colorNormal="#ff0000"
         app:fab_colorPressed="#E75043"
         app:fab_colorRipple="#99FFFFFF"
         app:fab_showShadow="true"
@@ -28,9 +28,18 @@
         app:fab_shadowYOffset="3dp"
         app:fab_size="normal"
         app:fab_showAnimation="@anim/fab_scale_up"
-        app:fab_hideAnimation="@anim/fab_scale_down"
-        app:fab_label="Label">
-    </com.github.clans.fab.FloatingActionButton>
+        app:fab_hideAnimation="@anim/fab_scale_down">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/item_menu_novo_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hospital"
+            app:fab_size="normal"
+            app:fab_label="Novo Local"
+            android:onClick="novoLocal" />
+
+    </com.github.clans.fab.FloatingActionMenu>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolBarLocaisAtendimento"

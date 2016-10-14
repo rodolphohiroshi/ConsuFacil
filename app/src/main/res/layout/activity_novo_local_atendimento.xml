@@ -123,8 +123,8 @@
                 android:layout_height="wrap_content"
                 android:text="X"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="20dp"
-                android:background="#C0C0C0"/>
+                android:textSize="30dp"
+                android:background="#0000ffcc"/>
 
         </LinearLayout>
 
@@ -195,8 +195,8 @@
                 android:layout_height="wrap_content"
                 android:text="X"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="20dp"
-                android:background="#C0C0C0"/>
+                android:textSize="30dp"
+                android:background="#0000ffcc" />
 
         </LinearLayout>
 
