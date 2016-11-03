@@ -8,8 +8,7 @@ public class Usuario {
     private String login;
     private String senha;
     private String nome;
-    private List<String> telefone;
-    private List<String> email;
+    private List<String> emails;
     private List<String> telefones;
     private char sexo;
     private Date dataNascimento;
@@ -51,20 +50,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public List<String> getTelefone() {
-        return telefone;
+    public List<String> getEmails() {
+        return emails;
     }
 
-    public void setTelefone(List<String> telefone) {
-        this.telefone = telefone;
-    }
-
-    public List<String> getEmail() {
-        return email;
-    }
-
-    public void setEmail(List<String> email) {
-        this.email = email;
+    public void setEmails(List<String> email) {
+        this.emails = email;
     }
 
     public char getSexo() {
