@@ -4,26 +4,14 @@ import com.google.firebase.database.Exclude;
 
 import java.util.List;
 
+
 public class Agenda {
-
-
     @Exclude
     private String id;
-
     private String nome;
     private int tempoPadraoMinutos;
     private List<PeriodoTempo> horariosAtendimento;
     private List<PeriodoTempo> horariosBloqueados;
-
-    @Exclude
-    public String getId() {
-        return id;
-    }
-
-    @Exclude
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public List<PeriodoTempo> getHorariosBloqueados() {
         return horariosBloqueados;
@@ -39,6 +27,16 @@ public class Agenda {
 
     public void setHorariosAtendimento(List<PeriodoTempo> horariosAtendimento) {
         this.horariosAtendimento = horariosAtendimento;
+    }
+
+    @Exclude
+    public String getId() {
+        return id;
+    }
+
+    @Exclude
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNome() {

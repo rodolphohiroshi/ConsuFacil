@@ -19,12 +19,13 @@ public interface InterfaceDAO<T> {
      */
     public void buscarPelaId(String id);
 
+
     /**
      * Insere um objeto do tipo {@link T} no banco de dados.
      *
      * @param objeto Objeto a ser inserido no banco de dados.
      */
-    public void inserir(T objeto);
+    public void inserir( T objeto );
 
     /**
      * Remove um objeto do tipo {@link T} no banco de dados.

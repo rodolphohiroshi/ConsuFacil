@@ -83,6 +83,8 @@ public class LocalAtendimentoDAO extends AbstractDAO<LocalAtendimento> {
         registroLocalAtendimento.setValue(localAtendimento);
         localAtendimento.setId(registroLocalAtendimento.getKey());
         EventBus.getDefault().post(new DatabaseEvent<>("Local de atendimento salvo"));
+
+
     }
 
     @Override

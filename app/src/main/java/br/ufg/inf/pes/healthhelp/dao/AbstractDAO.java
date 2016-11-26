@@ -10,10 +10,10 @@ public abstract class AbstractDAO<T> implements InterfaceDAO<T> {
 
     private DatabaseReference databaseReference;
 
+
     public AbstractDAO(String TAG, String DATABASE_CHILD) {
         this.TAG = TAG;
         this.DATABASE_CHILD = DATABASE_CHILD;
-        this.databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
     protected DatabaseReference getDatabaseReference() {

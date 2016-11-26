@@ -32,7 +32,7 @@ public class AtuacaoDAO extends AbstractDAO<Atuacao> {
 
     @Override
     public void inserir(Atuacao objeto) {
-        //TODO
+
     }
 
     @Override
